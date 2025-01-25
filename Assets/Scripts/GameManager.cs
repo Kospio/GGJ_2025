@@ -40,9 +40,4 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    void ChangeScene()
-    {
-        //CAMBIO DE ESCENA
-    }
 }
