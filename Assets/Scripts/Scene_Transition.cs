@@ -22,7 +22,7 @@ public class SceneTransitionManager : MonoBehaviour
         timerImage = GameObject.FindGameObjectWithTag("TimerImage");
         BubblesExplodedLocal = GameObject.FindGameObjectWithTag("BubblesExplodedLocal");
 
-        canvasPanel.gameObject.SetActive(false);
+        //canvasPanel.gameObject.SetActive(false);
         timerImage.gameObject.SetActive(false);
         BubblesExplodedLocal.gameObject.SetActive(false);
     }
@@ -41,7 +41,7 @@ public class SceneTransitionManager : MonoBehaviour
         // Fase 1: Fundir de transparente a negro
         yield return StartCoroutine(Fade(0f, 1f));
 
-        canvasPanel.gameObject.SetActive(false);
+        //canvasPanel.gameObject.SetActive(false);
         timerImage.gameObject.SetActive(false);
         BubblesExplodedLocal.gameObject.SetActive(false);
 
@@ -50,7 +50,7 @@ public class SceneTransitionManager : MonoBehaviour
 
         if (sceneName == "Disparo_Pompa" || sceneName == "Hinchar" || sceneName == "Laberinto" || sceneName == "Papel_Burbuja")
         {
-            canvasPanel.gameObject.SetActive(true);
+            //canvasPanel.gameObject.SetActive(true);
             timerImage.gameObject.SetActive(true);
             BubblesExplodedLocal.gameObject.SetActive(true);
 

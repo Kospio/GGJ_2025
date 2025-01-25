@@ -65,9 +65,10 @@ public class MinigameManager : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
         timeToStart--;
-        Destroy(countdownText.gameObject);
 
-        //PRUEBA BORRAR
+
+        countdownText.text = ""; 
+
         StartCoroutine(CuentaAtrasMinijuego()); 
     }
 
