@@ -178,12 +178,12 @@ TextureImporter:
       name: buble_explosion_0
       rect:
         serializedVersion: 2
-        x: 119
-        y: 230
-        width: 961
-        height: 1001
+        x: 0
+        y: 0
+        width: 1100
+        height: 1500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -200,12 +200,12 @@ TextureImporter:
       name: buble_explosion_1
       rect:
         serializedVersion: 2
-        x: 1222
-        y: 253
-        width: 980
-        height: 993
+        x: 1098
+        y: 0
+        width: 1203
+        height: 1500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -222,12 +222,12 @@ TextureImporter:
       name: buble_explosion_2
       rect:
         serializedVersion: 2
-        x: 2352
-        y: 226
-        width: 1105
-        height: 1018
+        x: 2303
+        y: 0
+        width: 1220
+        height: 1500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,37 +241,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buble_explosion_3
-      rect:
-        serializedVersion: 2
-        x: 3633
-        y: 1123
-        width: 57
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4216988e737a98d30800000000000000
-      internalID: 4434259166689321252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: buble_explosion_4
       rect:
         serializedVersion: 2
-        x: 3788
-        y: 196
-        width: 931
-        height: 1082
+        x: 3526
+        y: 0
+        width: 1193
+        height: 1500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -284,473 +262,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: buble_explosion_5
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 1049
-        width: 37
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e57c02a831b82cf00800000000000000
-      internalID: 1135622972088829790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_6
-      rect:
-        serializedVersion: 2
-        x: 3686
-        y: 1047
-        width: 67
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b22d8c9ef8c877660800000000000000
-      internalID: 7383524663827681835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_7
-      rect:
-        serializedVersion: 2
-        x: 1138
-        y: 940
-        width: 59
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 216e772c8ff0db130800000000000000
-      internalID: 3584038439545726482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_8
-      rect:
-        serializedVersion: 2
-        x: 2322
-        y: 876
-        width: 91
-        height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9ba7e16e911d99480800000000000000
-      internalID: -8891846080101188935
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_9
-      rect:
-        serializedVersion: 2
-        x: 3527
-        y: 876
-        width: 63
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5b4cc12b4070ab290800000000000000
-      internalID: -7873973281754397515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_10
-      rect:
-        serializedVersion: 2
-        x: 3658
-        y: 887
-        width: 65
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b19647ef1820e2560800000000000000
-      internalID: 7290767604102490395
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_11
-      rect:
-        serializedVersion: 2
-        x: 3659
-        y: 947
-        width: 110
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70958e8e6c2ac5c70800000000000000
-      internalID: 8961216333755209991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_12
-      rect:
-        serializedVersion: 2
-        x: 1121
-        y: 833
-        width: 38
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e6d75a55028882540800000000000000
-      internalID: 4983382660142693742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_13
-      rect:
-        serializedVersion: 2
-        x: 2325
-        y: 795
-        width: 50
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c8e3223f33a523b90800000000000000
-      internalID: -7263644069826249076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_14
-      rect:
-        serializedVersion: 2
-        x: 2191
-        y: 597
-        width: 52
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8406198192283c370800000000000000
-      internalID: 8341654047837741128
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_15
-      rect:
-        serializedVersion: 2
-        x: 2241
-        y: 653
-        width: 58
-        height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2f134d9fd097f6660800000000000000
-      internalID: 7381251415216501234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_16
-      rect:
-        serializedVersion: 2
-        x: 3443
-        y: 608
-        width: 77
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c617eb58c049d5d80800000000000000
-      internalID: -8260283360023252628
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_17
-      rect:
-        serializedVersion: 2
-        x: 3569
-        y: 635
-        width: 59
-        height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 084c21391e18a6c00800000000000000
-      internalID: 894670281821570176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_18
-      rect:
-        serializedVersion: 2
-        x: 3769
-        y: 577
-        width: 69
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 19d04c35f9bf3c1c0800000000000000
-      internalID: -4484464142207152751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_19
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 568
-        width: 34
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2db6b0f2604c2be10800000000000000
-      internalID: 2212045897830460370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_20
-      rect:
-        serializedVersion: 2
-        x: 3590
-        y: 221
-        width: 383
-        height: 421
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c5af9d22b046607b0800000000000000
-      internalID: -5258405515916346788
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_21
-      rect:
-        serializedVersion: 2
-        x: 2178
-        y: 407
-        width: 72
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0c6445a9153967780800000000000000
-      internalID: -8685592852646574400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_22
-      rect:
-        serializedVersion: 2
-        x: 3350
-        y: 344
-        width: 114
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 80e02ebe771f021c0800000000000000
-      internalID: -4530355727773856248
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_23
-      rect:
-        serializedVersion: 2
-        x: 4659
-        y: 301
-        width: 69
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 22c6588f3b388d170800000000000000
-      internalID: 8203451530247236642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_24
-      rect:
-        serializedVersion: 2
-        x: 4097
-        y: 162
-        width: 103
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 87fa6e74557fdeec0800000000000000
-      internalID: -3535898186765389960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buble_explosion_25
-      rect:
-        serializedVersion: 2
-        x: 4206
-        y: 143
-        width: 70
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 04557367054c38ab0800000000000000
-      internalID: -5006942510846094016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 677e66fdaad317342bb331d703726984
     internalID: 0
     vertices: []
     indices: 
@@ -759,7 +275,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      buble_explosion_0: 2358615295588606564
+      buble_explosion_1: -2346747983537916540
+      buble_explosion_19: 2212045897830460370
+      buble_explosion_2: -2279347994043121235
+      buble_explosion_4: -7803156213530056203
+      buble_explosion_5: 1135622972088829790
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

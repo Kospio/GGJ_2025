@@ -49,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -115,20 +115,28 @@ TextureImporter:
       name: click_anim_0
       rect:
         serializedVersion: 2
-        x: 46
+        x: 0
         y: 0
-        width: 221
-        height: 307
+        width: 290
+        height: 408
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      outline:
+      - - {x: 0, y: -204}
+        - {x: 145, y: 0}
+        - {x: 0, y: 204}
+        - {x: -145, y: 0}
+      physicsShape:
+      - - {x: 0, y: -204}
+        - {x: 145, y: 0}
+        - {x: 0, y: 204}
+        - {x: -145, y: 0}
+      tessellationDetail: 0
       bones: []
-      spriteID: d169a907365303560800000000000000
-      internalID: 7291386497920046621
+      spriteID: bf579750a74c1f24787385efb5c79c5c
+      internalID: 1429329301
       vertices: []
       indices: 
       edges: []
@@ -137,20 +145,20 @@ TextureImporter:
       name: click_anim_1
       rect:
         serializedVersion: 2
-        x: 289
-        y: 173
-        width: 293
-        height: 235
+        x: 290
+        y: 0
+        width: 290
+        height: 408
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 32c0a8f0e9bdf8e30800000000000000
-      internalID: 4508063223933176867
+      spriteID: 2dde7c8b7ffd5c648b8ef278d0853f45
+      internalID: -590819072
       vertices: []
       indices: 
       edges: []
@@ -159,64 +167,20 @@ TextureImporter:
       name: click_anim_2
       rect:
         serializedVersion: 2
-        x: 336
+        x: 580
         y: 0
-        width: 221
-        height: 276
+        width: 290
+        height: 408
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d896d0d6ab7875e90800000000000000
-      internalID: -7037006657979848307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: click_anim_3
-      rect:
-        serializedVersion: 2
-        x: 628
-        y: 0
-        width: 221
-        height: 276
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5d1db6d61c92b3bc0800000000000000
-      internalID: -3802399549643042347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: click_anim_4
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 218
-        width: 178
-        height: 134
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c192d878c159a6a50800000000000000
-      internalID: 6515183760710641948
+      spriteID: 6f473bb8334989e4d97833dbdf3fd8a6
+      internalID: -1924731239
       vertices: []
       indices: 
       edges: []
@@ -225,7 +189,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c9d7842a233119c42b08ba3dcc16b061
     internalID: 0
     vertices: []
     indices: 
@@ -234,7 +198,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      click_anim_0: 1429329301
+      click_anim_1: -590819072
+      click_anim_2: -1924731239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
