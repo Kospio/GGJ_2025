@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using TMPro;
 
 public class SceneTransitionManager : MonoBehaviour
 {
@@ -13,17 +14,17 @@ public class SceneTransitionManager : MonoBehaviour
 
     GameObject canvasPanel; 
     GameObject timerImage;
-    GameObject timerText;
+    GameObject BubblesExplodedLocal;
 
     private void Start()
     {
         canvasPanel = GameObject.FindGameObjectWithTag("CountDownPanel");
         timerImage = GameObject.FindGameObjectWithTag("TimerImage");
-        timerText = GameObject.FindGameObjectWithTag("TimerText");
+        BubblesExplodedLocal = GameObject.FindGameObjectWithTag("BubblesExplodedLocal");
 
         canvasPanel.gameObject.SetActive(false);
         timerImage.gameObject.SetActive(false);
-        timerText.gameObject.SetActive(false);
+        BubblesExplodedLocal.gameObject.SetActive(false);
     }
 
     /// <summary>
@@ -42,7 +43,7 @@ public class SceneTransitionManager : MonoBehaviour
 
         canvasPanel.gameObject.SetActive(false);
         timerImage.gameObject.SetActive(false);
-        timerText.gameObject.SetActive(false);
+        BubblesExplodedLocal.gameObject.SetActive(false);
 
         // Cargar nueva escena
         SceneManager.LoadScene(sceneName);
@@ -51,7 +52,9 @@ public class SceneTransitionManager : MonoBehaviour
         {
             canvasPanel.gameObject.SetActive(true);
             timerImage.gameObject.SetActive(true);
-            timerText.gameObject.SetActive(true);
+            BubblesExplodedLocal.gameObject.SetActive(true);
+
+            BubblesExplodedLocal.gameObject.GetComponent<TextMeshProUGUI>().text = "0";
         }
 
         // Esperar un frame para asegurarnos de que la escena se haya cargado

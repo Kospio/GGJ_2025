@@ -9,15 +9,18 @@ public class MinigameManager : MonoBehaviour
     GameManager gameManager;
 
     public float timeMaxLevel;
+    float timeLeft; 
     
     int bubblesExplodedLocal;
     float fadeDuration = 1f;
 
     [HideInInspector]
     public Image fadeImage;
+    Image timerImage; 
 
     [SerializeField]
     TextMeshProUGUI countdownText;
+    TextMeshProUGUI bubblesExplodedLocalText; 
     
     //public TextMeshPro bubblesExplodedText;
 
@@ -32,13 +35,21 @@ public class MinigameManager : MonoBehaviour
     {
         //Siempre un countdown de 3 segundos
         timeToStart = 3;
+        
+
         gameManager = FindFirstObjectByType<GameManager>();
         transitionManager = FindFirstObjectByType<SceneTransitionManager>();
-
-        countdownText = GameObject.FindGameObjectWithTag("CountDownText").gameObject.GetComponent<TextMeshProUGUI>();
+        
         fadeImage = GameObject.FindGameObjectWithTag("CountDownPanel").gameObject.GetComponent<Image>();
+        timerImage = GameObject.FindGameObjectWithTag("TimerImage").gameObject.GetComponent<Image>();
+        bubblesExplodedLocalText = GameObject.FindGameObjectWithTag("BubblesExplodedLocal").GetComponent<TextMeshProUGUI>();
+        countdownText = GameObject.FindGameObjectWithTag("CountDownText").gameObject.GetComponent<TextMeshProUGUI>();
+
+        countdownText.text = timeToStart.ToString();
 
         StartCoroutine(CountdownToStart());
+
+        timeLeft = timeMaxLevel;
     }
 
     IEnumerator CountdownToStart()
@@ -57,13 +68,15 @@ public class MinigameManager : MonoBehaviour
         Destroy(countdownText.gameObject);
 
         //PRUEBA BORRAR
-        LoadNextScene(nextSceneToLoad);
+        StartCoroutine(CuentaAtrasMinijuego()); 
     }
 
     public void ExplodeBubble()
     {
         bubblesExplodedLocal++;
-        gameManager.BubblesKilled++; 
+        gameManager.BubblesKilled++;
+
+        bubblesExplodedLocalText.text = bubblesExplodedLocal.ToString();
     }
 
     void LoadNextScene(string localNameNextScene)
@@ -75,7 +88,6 @@ public class MinigameManager : MonoBehaviour
     {
         float elapsedTime = 0f;
 
-        // Si no se ha asignado la imagen, evitar errores
         if (fadeImage == null)
         {
             yield break;
@@ -98,5 +110,23 @@ public class MinigameManager : MonoBehaviour
         Color finalColor = fadeImage.color;
         finalColor.a = endAlpha;
         fadeImage.color = finalColor;
+    }
+
+    IEnumerator CuentaAtrasMinijuego()
+    {
+        while (timeLeft > 0)
+        {
+            timeLeft -= Time.deltaTime;
+
+            //Llevarlo a potencia de 1
+            timerImage.fillAmount = timeLeft/timeMaxLevel;
+
+            yield return null;
+        }
+
+        if (timeLeft < 0)
+        {
+            LoadNextScene(nextSceneToLoad);
+        }
     }
 }

@@ -8,7 +8,6 @@ public class ClickTimed : MonoBehaviour
 
     public float maximumScale;
 
-    public int bubblesExplodedLocal; 
     public float scaleSpeed;
     public float scaleSum;
 
