@@ -6,23 +6,26 @@ using TMPro;
 
 public class MinigameManager : MonoBehaviour
 {
-    [SerializeField]
     GameManager gameManager;
 
     public float timeMaxLevel;
     
     int bubblesExplodedLocal;
     float fadeDuration = 1f;
+
+    [HideInInspector]
     public Image fadeImage;
 
+    [SerializeField]
     TextMeshProUGUI countdownText;
+    
     //public TextMeshPro bubblesExplodedText;
 
     [HideInInspector]
     public float timeToStart;
     SceneTransitionManager transitionManager;
 
-    public string nextSceneToLoad; 
+    public string nextSceneToLoad;
 
 
     private void Start()
@@ -31,7 +34,8 @@ public class MinigameManager : MonoBehaviour
         timeToStart = 3;
         gameManager = FindFirstObjectByType<GameManager>();
         transitionManager = FindFirstObjectByType<SceneTransitionManager>();
-        countdownText = GameObject.FindGameObjectWithTag("CountDownText").gameObject.GetComponent<TextMeshProUGUI>(); 
+
+        countdownText = GameObject.FindGameObjectWithTag("CountDownText").gameObject.GetComponent<TextMeshProUGUI>();
         fadeImage = GameObject.FindGameObjectWithTag("CountDownPanel").gameObject.GetComponent<Image>();
 
         StartCoroutine(CountdownToStart());
@@ -50,7 +54,10 @@ public class MinigameManager : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
         timeToStart--;
-        Destroy(countdownText.gameObject); 
+        Destroy(countdownText.gameObject);
+
+        //PRUEBA BORRAR
+        LoadNextScene(nextSceneToLoad);
     }
 
     public void ExplodeBubble()

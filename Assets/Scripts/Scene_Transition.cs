@@ -9,8 +9,22 @@ public class SceneTransitionManager : MonoBehaviour
     public float fadeDuration = 1f;
 
     [Header("Imagen UI para el efecto de transición")]
-    public Image fadeImage;
+    Image fadeImage;
 
+    GameObject canvasPanel; 
+    GameObject timerImage;
+    GameObject timerText;
+
+    private void Start()
+    {
+        canvasPanel = GameObject.FindGameObjectWithTag("CountDownPanel");
+        timerImage = GameObject.FindGameObjectWithTag("TimerImage");
+        timerText = GameObject.FindGameObjectWithTag("TimerText");
+
+        canvasPanel.gameObject.SetActive(false);
+        timerImage.gameObject.SetActive(false);
+        timerText.gameObject.SetActive(false);
+    }
 
     /// <summary>
     /// Llama a esta función para hacer la transición a otra escena con fundido.
@@ -26,8 +40,19 @@ public class SceneTransitionManager : MonoBehaviour
         // Fase 1: Fundir de transparente a negro
         yield return StartCoroutine(Fade(0f, 1f));
 
+        canvasPanel.gameObject.SetActive(false);
+        timerImage.gameObject.SetActive(false);
+        timerText.gameObject.SetActive(false);
+
         // Cargar nueva escena
         SceneManager.LoadScene(sceneName);
+
+        if (sceneName == "Disparo_Pompa" || sceneName == "Hinchar" || sceneName == "Laberinto" || sceneName == "Papel_Burbuja")
+        {
+            canvasPanel.gameObject.SetActive(true);
+            timerImage.gameObject.SetActive(true);
+            timerText.gameObject.SetActive(true);
+        }
 
         // Esperar un frame para asegurarnos de que la escena se haya cargado
         yield return null;

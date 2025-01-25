@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CountDownText
   - CountDownPanel
+  - TimerImage
+  - TimerText
   layers:
   - Default
   - TransparentFX
