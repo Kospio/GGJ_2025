@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,6 +13,11 @@ public class Swipe : MonoBehaviour
     float YInitial;
     float XFinal;
     float YFinal;
+
+    public float dogMovementSpeed;
+    bool canMove;
+
+    string previousMovementDirection;
 
     void Update()
     {
@@ -37,41 +44,82 @@ public class Swipe : MonoBehaviour
                 if (Mathf.Abs(XFinal - XInitial) > Mathf.Abs(YFinal - YInitial))
                 {
                     //Izquierda
-                    if (XInitial > XFinal)
+                    if (XInitial > XFinal && previousMovementDirection != "Izquierda")
                     {
                         Debug.Log("Izquierda");
+                        canMove = true;
+                        StartCoroutine(MovementDog("Izquierda"));
                     }
 
                     //Derecha
-                    else
+                    else if (previousMovementDirection != "Derecha")
                     {
                         Debug.Log("Derecha");
+                        canMove = true;
+                        StartCoroutine(MovementDog("Derecha"));
                     }
                 }
 
-                else 
+                else
                 {
                     //Abajo
-                    if (YInitial > YFinal)
+                    if (YInitial > YFinal && previousMovementDirection != "Abajo")
                     {
                         Debug.Log("Abajo");
+                        canMove = true;
+                        StartCoroutine(MovementDog("Abajo"));
                     }
 
                     //Arriba
-                    else
+                    else if (previousMovementDirection != "Arriba")
                     {
                         Debug.Log("Arriba");
+                        canMove = true;
+                        StartCoroutine(MovementDog("Arriba"));
                     }
                 }
             }
 
             timeSwiping = 0;
-            XInitial = 0; 
+            XInitial = 0;
             YInitial = 0;
             XFinal = 0;
             YFinal = 0;
 
         }
-        
+
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        canMove = false;
+    }
+
+    IEnumerator MovementDog(string movementDirection)
+    {
+
+        while (canMove)
+        {
+            switch (movementDirection)
+            {
+                case "Derecha":
+                    transform.position += new Vector3(dogMovementSpeed * Time.deltaTime, 0, 0);
+                    break;
+                case "Izquierda":
+                    transform.position += new Vector3(-dogMovementSpeed * Time.deltaTime, 0, 0);
+                    break;
+                case "Arriba":
+                    transform.position += new Vector3(0, dogMovementSpeed * Time.deltaTime, 0);
+                    break;
+                case "Abajo":
+                    transform.position += new Vector3(0, -dogMovementSpeed * Time.deltaTime, 0);
+                    break;
+            }
+
+            previousMovementDirection = movementDirection;
+
+            yield return null;
+        }
+    }
+
 }

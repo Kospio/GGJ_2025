@@ -1,65 +1,61 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 public class ClickTimed : MonoBehaviour
 {
     float scaleFactor;
 
-    //No funciona el inspector
     public float maximumScale;
 
+    public int bubblesExplodedLocal; 
     public float scaleSpeed;
     public float scaleSum;
 
     GameObject scaledObject;
-    GameManager gameManager;
+    MinigameManager minigameManager;
 
     private void Start()
     {
-        maximumScale = 3; 
-
         scaledObject = this.gameObject;
-        gameManager = FindFirstObjectByType<GameManager>();
+        minigameManager = FindFirstObjectByType<MinigameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(minigameManager.timeToStart <= 0)
         {
-            scaleFactor += scaleSum;
-
-            if (scaleFactor >= maximumScale)
+            if (Input.GetMouseButtonDown(0))
             {
-                ExplodeBubble();
-            }
-        }
+                scaleFactor += scaleSum;
 
-        if (scaleFactor > 0)
-        {
-            if(scaleFactor - Time.deltaTime * scaleSpeed < 0)
-            {
-                scaleFactor = 0; 
+                if (scaleFactor >= maximumScale)
+                {
+                    ExplodeBubble();
+                }
             }
 
-            scaleFactor = scaleFactor - Time.deltaTime * scaleSpeed;
-        }
+            if (scaleFactor > 0)
+            {
+                if (scaleFactor - Time.deltaTime * scaleSpeed < 0)
+                {
+                    scaleFactor = 0;
+                }
 
-        scaledObject.transform.localScale = new Vector3(scaleFactor, scaleFactor, 1);
+                scaleFactor = scaleFactor - Time.deltaTime * scaleSpeed;
+            }
+
+            scaledObject.transform.localScale = new Vector3(scaleFactor, scaleFactor, 1);
+        }
+        
     }
 
     void ExplodeBubble()
     {
-        gameManager.BubblesKilled++;
+        minigameManager.ExplodeBubble();
 
-        Debug.Log(gameManager.BubblesKilled); 
-
-        Instantiate(scaledObject);
-
-        scaleFactor = 0; 
-
-        scaledObject.transform.localScale = new Vector3(scaleFactor, scaleFactor, 1);
-
+        Instantiate(scaledObject); 
         Destroy(this.gameObject);
     }
 }
