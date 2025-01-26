@@ -21,6 +21,8 @@ public class MinigameManager : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI countdownText;
     TextMeshProUGUI bubblesExplodedLocalText; 
+
+    AudioSource audioSource;
     
     //public TextMeshPro bubblesExplodedText;
 
@@ -80,6 +82,8 @@ public class MinigameManager : MonoBehaviour
     {
         bubblesExplodedLocal++;
         gameManager.BubblesKilled++;
+
+        audioSource.Play();
 
         bubblesExplodedLocalText.text = bubblesExplodedLocal.ToString();
     }
