@@ -160,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8393352554579656144, guid: bcbcc7a858ddfbc418d5511efa8281b6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.43
+      value: -0.08
       objectReference: {fileID: 0}
     - target: {fileID: 8393352554579656144, guid: bcbcc7a858ddfbc418d5511efa8281b6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -509,6 +509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeMaxLevel: 30
+  timeLeft: 0
   fadeImage: {fileID: 0}
   countdownText: {fileID: 0}
   timeToStart: 0
