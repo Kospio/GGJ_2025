@@ -286,6 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d85fe518473a64f9741cf653f76eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bubbleFaces: []
 --- !u!1 &786566147233962328
 GameObject:
   m_ObjectHideFlags: 0
