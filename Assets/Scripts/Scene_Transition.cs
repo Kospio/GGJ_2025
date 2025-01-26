@@ -21,6 +21,7 @@ public class SceneTransitionManager : MonoBehaviour
         canvasPanel = GameObject.FindGameObjectWithTag("CountDownPanel");
         timerImage = GameObject.FindGameObjectWithTag("TimerImage");
         BubblesExplodedLocal = GameObject.FindGameObjectWithTag("BubblesExplodedLocal");
+        fadeImage = canvasPanel.GetComponent<Image>();
 
         //canvasPanel.gameObject.SetActive(false);
         timerImage.gameObject.SetActive(false);

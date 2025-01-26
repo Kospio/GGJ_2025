@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8393352554579656144}
   - component: {fileID: 2778094000786153129}
+  - component: {fileID: 147337269811986529}
   m_Layer: 0
   m_Name: PompaEscaladoGO
   m_TagString: Untagged
@@ -46,9 +47,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maximumScale: 3
-  bubblesExplodedLocal: 0
   scaleSpeed: 1
   scaleSum: 0.3
+--- !u!114 &147337269811986529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288804037312305567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6ebd9ef154e714887b2c23b35b2470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8699766945127501259
 GameObject:
   m_ObjectHideFlags: 0

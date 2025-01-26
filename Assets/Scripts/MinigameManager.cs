@@ -31,7 +31,7 @@ public class MinigameManager : MonoBehaviour
     public string nextSceneToLoad;
 
 
-    private void Start()
+    private void Awake()
     {
         //Siempre un countdown de 3 segundos
         timeToStart = 3;
@@ -41,9 +41,13 @@ public class MinigameManager : MonoBehaviour
         transitionManager = FindFirstObjectByType<SceneTransitionManager>();
         
         fadeImage = GameObject.FindGameObjectWithTag("CountDownPanel").gameObject.GetComponent<Image>();
+        countdownText = GameObject.FindGameObjectWithTag("CountDownText").gameObject.GetComponent<TextMeshProUGUI>();
+
         timerImage = GameObject.FindGameObjectWithTag("TimerImage").gameObject.GetComponent<Image>();
         bubblesExplodedLocalText = GameObject.FindGameObjectWithTag("BubblesExplodedLocal").GetComponent<TextMeshProUGUI>();
-        countdownText = GameObject.FindGameObjectWithTag("CountDownText").gameObject.GetComponent<TextMeshProUGUI>();
+
+        timerImage.gameObject.SetActive(false);
+        bubblesExplodedLocalText.gameObject.SetActive(false);
 
         countdownText.text = timeToStart.ToString();
 
@@ -61,11 +65,12 @@ public class MinigameManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         timeToStart--;
         countdownText.text = timeToStart.ToString();
-        StartCoroutine(Fade(1f, 0f));
 
         yield return new WaitForSeconds(1f);
         timeToStart--;
 
+        timerImage.gameObject.SetActive(true);
+        bubblesExplodedLocalText.gameObject.SetActive(true);
 
         countdownText.text = ""; 
 

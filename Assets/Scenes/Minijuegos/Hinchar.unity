@@ -134,6 +134,18 @@ PrefabInstance:
       propertyPath: maximumScale
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3596639803234152858, guid: bcbcc7a858ddfbc418d5511efa8281b6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596639803234152858, guid: bcbcc7a858ddfbc418d5511efa8281b6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596639803234152858, guid: bcbcc7a858ddfbc418d5511efa8281b6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8393352554579656144, guid: bcbcc7a858ddfbc418d5511efa8281b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
