@@ -13,6 +13,7 @@ TagManager:
   - BubbleFall
   - BurbujaPapel
   - Perro
+  - BurbujaFinal
   layers:
   - Default
   - TransparentFX

@@ -21,7 +21,7 @@ public class PressToContinue : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Menu_Inicio_Escena_1")
         {
-            continueText.text = "Press to gather arround the fire...";
+            continueText.text = "Tap to gather arround the fire...";
         }
 
         else

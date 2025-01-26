@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: "Assets/Scenes/Escenas_Cinem\xE1ticas/Escena_5.unity"
     guid: ac84a26b6dd6a1146900e03fc1312612
   - enabled: 1
-    path: "Assets/Scenes/Escenas_Cinem\xE1ticas/Escena_Final.unity"
+    path: Assets/Scenes/Minijuegos/Escena_Final.unity
     guid: 4b743fba79af83e4a92a1eaa9ee3e6e7
   - enabled: 1
     path: Assets/Scenes/Pantallas_Cargas/Carga_1.unity

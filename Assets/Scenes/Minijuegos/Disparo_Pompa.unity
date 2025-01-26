@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80f46de3876f10146ab24b0eb3b126ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeMaxLevel: 5
+  timeMaxLevel: 15
   timeLeft: 0
   fadeImage: {fileID: 0}
   countdownText: {fileID: 0}

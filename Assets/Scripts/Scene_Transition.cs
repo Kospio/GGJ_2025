@@ -49,9 +49,9 @@ public class SceneTransitionManager : MonoBehaviour
         // Cargar nueva escena
         SceneManager.LoadScene(sceneName);
 
-        if (sceneName == "Disparo_Pompa" || sceneName == "Hinchar" || sceneName == "Laberinto" || sceneName == "Papel_Burbuja")
+        if (sceneName == "Disparo_Pompa" || sceneName == "Hinchar" || sceneName == "Laberinto" || sceneName == "Papel_Burbuja" || sceneName == "Escena_Final")
         {
-            //canvasPanel.gameObject.SetActive(true);
+            canvasPanel.gameObject.SetActive(true);
             timerImage.gameObject.SetActive(true);
             BubblesExplodedLocal.gameObject.SetActive(true);
 
