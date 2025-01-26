@@ -40,7 +40,8 @@ public class MinigameManager : MonoBehaviour
 
         gameManager = FindFirstObjectByType<GameManager>();
         transitionManager = FindFirstObjectByType<SceneTransitionManager>();
-        
+        audioSource = GetComponent<AudioSource>();
+
         fadeImage = GameObject.FindGameObjectWithTag("CountDownPanel").gameObject.GetComponent<Image>();
         countdownText = GameObject.FindGameObjectWithTag("CountDownText").gameObject.GetComponent<TextMeshProUGUI>();
 
