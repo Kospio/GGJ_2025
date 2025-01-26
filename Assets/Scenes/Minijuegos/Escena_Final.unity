@@ -816,7 +816,7 @@ MonoBehaviour:
   fadeImage: {fileID: 0}
   countdownText: {fileID: 0}
   timeToStart: 0
-  nextSceneToLoad: Escena_Final
+  nextSceneToLoad: Escena_Final_Cine
 --- !u!4 &1034743752
 Transform:
   m_ObjectHideFlags: 0
