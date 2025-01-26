@@ -1,0 +1,8 @@
+D:/Juegos/GGJ_2025/GGJ_2025/.utmp/RelWithDebInfo/k17573fh/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/Juegos/GGJ_2025/GGJ_2025/.utmp/RelWithDebInfo/k17573fh/arm64-v8a/CMakeFiles/rebuild_cache.dir
+D:/Juegos/GGJ_2025/GGJ_2025/.utmp/RelWithDebInfo/k17573fh/arm64-v8a/GameActivity/CMakeFiles/game.dir
+D:/Juegos/GGJ_2025/GGJ_2025/.utmp/RelWithDebInfo/k17573fh/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+D:/Juegos/GGJ_2025/GGJ_2025/.utmp/RelWithDebInfo/k17573fh/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+D:/Juegos/GGJ_2025/GGJ_2025/.utmp/RelWithDebInfo/k17573fh/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+D:/Juegos/GGJ_2025/GGJ_2025/.utmp/RelWithDebInfo/k17573fh/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+D:/Juegos/GGJ_2025/GGJ_2025/.utmp/RelWithDebInfo/k17573fh/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir
