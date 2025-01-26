@@ -23,7 +23,7 @@ public class ClickTimed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(minigameManager.timeToStart <= 0)
+        if (minigameManager.timeToStart <= 0)
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -47,14 +47,14 @@ public class ClickTimed : MonoBehaviour
 
             scaledObject.transform.localScale = new Vector3(scaleFactor, scaleFactor, 1);
         }
-        
+
     }
 
     void ExplodeBubble()
     {
         minigameManager.ExplodeBubble();
 
-        Instantiate(scaledObject); 
+        Instantiate(scaledObject);
         Destroy(this.gameObject);
     }
 }

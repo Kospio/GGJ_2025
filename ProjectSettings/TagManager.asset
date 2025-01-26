@@ -8,6 +8,9 @@ TagManager:
   - CountDownPanel
   - TimerImage
   - BubblesExplodedLocal
+  - Bullet
+  - Undefined
+  - BubbleFall
   layers:
   - Default
   - TransparentFX

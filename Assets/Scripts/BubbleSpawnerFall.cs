@@ -4,16 +4,14 @@ using UnityEngine.InputSystem;
 
 public class BubbleSpawnerFall : MonoBehaviour
 {
-    float minSpawnerX; 
-    float maxSpawnerX;
+    public float minSpawnerX; 
+    public float maxSpawnerX;
 
-    GameObject bubbleGO;
-
-    //MINIGAMEMANAGER CONTROL DE INICIO
+    public GameObject bubbleGO;
 
     private void Start()
     {
-        InvokeRepeating("SpawnBubble", 2, 0.3f); 
+        InvokeRepeating("SpawnBubble", 2, 0.2f); 
     }
 
     void SpawnBubble()
