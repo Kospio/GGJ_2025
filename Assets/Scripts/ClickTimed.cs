@@ -23,7 +23,7 @@ public class ClickTimed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (minigameManager.timeToStart <= 0)
+        if (minigameManager.timeToStart <= 0 && minigameManager.timeLeft > 0)
         {
             if (Input.GetMouseButtonDown(0))
             {

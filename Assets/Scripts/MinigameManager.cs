@@ -9,7 +9,7 @@ public class MinigameManager : MonoBehaviour
     GameManager gameManager;
 
     public float timeMaxLevel;
-    float timeLeft; 
+    public float timeLeft; 
     
     int bubblesExplodedLocal;
     float fadeDuration = 1f;

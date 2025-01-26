@@ -13,9 +13,16 @@ public class Cervatana : MonoBehaviour
 
     public GameObject bulletInstanciate; 
 
+    MinigameManager minigameManager;
+
+    private void Start()
+    {
+        minigameManager = GameObject.FindFirstObjectByType<MinigameManager>();
+    }
+
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && minigameManager.timeLeft > 0)
         {
             XInitial = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
             YInitial = Camera.main.ScreenToWorldPoint(Input.mousePosition).y;
