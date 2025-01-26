@@ -12,6 +12,7 @@ TagManager:
   - Undefined
   - BubbleFall
   - BurbujaPapel
+  - Perro
   layers:
   - Default
   - TransparentFX

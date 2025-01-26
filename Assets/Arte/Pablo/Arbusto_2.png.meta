@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 38fb653643d389149b7ef17541ad6937
+guid: 0aee572b1524f5f4fa58bdf4bb996ed8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 995611036972305804
-    second: Trail_Individual_0
-  - first:
-      213: 7265835455779481067
-    second: Trail_Individual_1
-  - first:
-      213: 7220058525906603956
-    second: Trail_Individual_2
-  - first:
-      213: -7809490699841219028
-    second: Trail_Individual_3
-  - first:
-      213: 7273547550203039909
-    second: Trail_Individual_4
+      213: 5972576023125110338
+    second: Arbusto_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -84,6 +72,32 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -122,19 +136,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -151,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Trail_Individual_0
+      name: Arbusto_2_0
       rect:
         serializedVersion: 2
-        x: 35
-        y: 16
-        width: 205
-        height: 201
+        x: 44
+        y: 66
+        width: 597
+        height: 991
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,96 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8d413196fe11dd00800000000000000
-      internalID: 995611036972305804
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trail_Individual_1
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 213
-        width: 41
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be5ac2ad9de65d460800000000000000
-      internalID: 7265835455779481067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trail_Individual_2
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 216
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4bf813ec9fcc23460800000000000000
-      internalID: 7220058525906603956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trail_Individual_3
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 211
-        width: 9
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c265f3fb59d1f9390800000000000000
-      internalID: -7809490699841219028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trail_Individual_4
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 93
-        width: 8
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5a0d3c2c5f4d0f460800000000000000
-      internalID: 7273547550203039909
+      spriteID: 24e236cbf3ad2e250800000000000000
+      internalID: 5972576023125110338
       vertices: []
       indices: 
       edges: []
@@ -264,7 +177,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -274,11 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Trail_Individual_0: 995611036972305804
-      Trail_Individual_1: 7265835455779481067
-      Trail_Individual_2: 7220058525906603956
-      Trail_Individual_3: -7809490699841219028
-      Trail_Individual_4: 7273547550203039909
+      Arbusto_2_0: 5972576023125110338
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
