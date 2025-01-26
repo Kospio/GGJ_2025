@@ -31,11 +31,10 @@ public class MinigameManager : MonoBehaviour
     public string nextSceneToLoad;
 
 
-    private void Awake()
+    private void Start()
     {
         //Siempre un countdown de 3 segundos
         timeToStart = 3;
-        
 
         gameManager = FindFirstObjectByType<GameManager>();
         transitionManager = FindFirstObjectByType<SceneTransitionManager>();

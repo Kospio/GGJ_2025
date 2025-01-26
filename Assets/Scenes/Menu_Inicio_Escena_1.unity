@@ -466,8 +466,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d06dcdd0427380f4e8bf203fd7023ef1, type: 2}
+  m_sharedMaterial: {fileID: 5749633641930105390, guid: d06dcdd0427380f4e8bf203fd7023ef1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -577,7 +577,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 351}
+  m_AnchoredPosition: {x: 0, y: 434}
   m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1401311385
@@ -602,8 +602,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Press to continue
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d06dcdd0427380f4e8bf203fd7023ef1, type: 2}
+  m_sharedMaterial: {fileID: 5749633641930105390, guid: d06dcdd0427380f4e8bf203fd7023ef1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -627,8 +627,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.06
-  m_fontSizeBase: 62.06
+  m_fontSize: 95.61
+  m_fontSizeBase: 95.61
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -665,7 +665,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -112.041534}
+  m_margin: {x: 189.18738, y: 0, z: 137.21283, w: -243.01744}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -877,8 +877,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d06dcdd0427380f4e8bf203fd7023ef1, type: 2}
+  m_sharedMaterial: {fileID: 5749633641930105390, guid: d06dcdd0427380f4e8bf203fd7023ef1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1165,6 +1165,18 @@ MonoBehaviour:
           m_StringArgument: Carga_1
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1831294243}
+        m_TargetAssemblyTypeName: MainMenuMoveImage, Assembly-CSharp
+        m_MethodName: RepositionImage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1790903110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1318,6 +1330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1831294242}
   - component: {fileID: 1831294241}
+  - component: {fileID: 1831294243}
   m_Layer: 0
   m_Name: fondo_1_0
   m_TagString: Untagged
@@ -1369,7 +1382,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8316877914652829436, guid: 7f1bdd9c4af2fb2439f6cf69408919a3, type: 3}
+  m_Sprite: {fileID: 8328658695731663660, guid: d0dded906372c104ab48f7120d2998be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1389,12 +1402,26 @@ Transform:
   m_GameObject: {fileID: 1831294240}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.91, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 0.52, y: 0.52, z: 0.52}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1831294243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831294240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc092cad4b530d74e89e9313768c2115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 9.5, z: 0}
+  duration: 20
 --- !u!1 &1958150544
 GameObject:
   m_ObjectHideFlags: 0
